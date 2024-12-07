@@ -1,0 +1,749 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_header{
+    position: absolute;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color:rgb(5, 137, 137);
+    opacity: .8;
+    overflow: auto;
+}
+.logo_img{
+    width: 115px;
+    height: 60px;
+    float: left;
+   margin-left: 150px;
+}
+.list{
+    list-style: none;
+    float: right;
+    margin-right: 125px;
+    margin-top: 20px;
+}
+.list li{
+    display: inline-block;
+    margin-left: 20px;  
+}
+.list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform:capitalize ;
+}
+.line_header{
+    width: 47px;
+    height: 3px;
+    background-color:white ;
+}
+.list li a:hover{
+    transition: .2s;
+    font-size: 23px;
+    color: rgb(120, 35, 35);
+}
+.home:hover  .line_header {
+    transition: .2s;
+   width: 55px;
+   background-color:rgb(120, 35, 35) ;
+}
+/* /////////////////////////////////////////////////////// */
+.first_page{
+  background-image: url(../pictures/health3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.overlay_firpage , .overlay_forthpage{
+    position: absolute;
+    background-color: rgba(0, 0, 0,.7);
+    width: 100%;
+    height: 100%;
+}
+.contente_firpag{
+    text-align: center;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.head_firpag{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    word-spacing: 8px;
+    margin-bottom: 18px;
+}
+.spa_firpag{
+    font-size: 50px;
+    color: rgb(75, 209, 209);
+}
+.p_firpag{
+    font-size: 20px;
+    color: rgb(167, 167, 167);
+    margin-bottom: 45px;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+}
+.btn_firpag{
+     font-size: 18px;
+     width: 135px;
+     height: 45px; 
+     border-radius: 8px;
+     cursor: pointer;
+     margin-left: 15px;
+}
+.btn1_firpag{
+    background-color: rgb(5, 137, 137);
+    color: white;
+}
+.btn2_firpag{
+    color: rgb(5, 137, 137); 
+}
+.btn_firpag:hover{
+    background-color: rgba(0, 0, 0,.5);
+    width: 150px;
+    height: 50px;
+}
+/* ///////////////////////////////////////////////// */
+.sec_page{
+    margin-top: 120px;
+}
+.container_sec_page{
+    width: 90%;
+    margin: auto;
+}
+.cont_sec{
+    overflow: auto;
+}
+.whyus{
+    padding: 10px 25px;
+    float: left;
+    width: 40%;
+}
+.why{
+    font-size: 50px;
+    margin-bottom: 18px;
+}
+.p_why{
+    font-size: 32px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(32, 31, 31);
+    padding: 5px 0px 40px 35px;
+}
+.sec_icons{ 
+    font-size: 20px;
+    padding-left: 60px;
+    margin-bottom: 40px;
+}
+.sec_icons i{
+    margin-right: 13px;
+    font-size: 23px;
+}
+.pic_secpage{
+    float: right;
+}
+.list_sec{
+   margin: 20px 50%;
+   width: 100px;
+   height: 15px;
+   overflow: auto;
+}
+.list_sec li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(160, 159, 159);
+    list-style-type: none;
+    float: left;
+    margin-left: 20px;
+}
+.list_sec .li_1{
+   background-color: rgb(55, 55, 192);
+}
+.list_sec li:hover{
+    background-color: rgb(55, 55, 192);
+    cursor: pointer;
+}
+/* ///////////////////////////////////////////////////////////// */
+.third_page{
+    margin-top: 100px;
+}
+.head{
+    font-size: 40px;
+    margin: 0px 40%;
+}
+.line{
+    width: 110px;
+    height: 4px;
+    background-color: black;
+    margin: 10px 0px 75px 46%;
+}
+.parent_third{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+.child_third{
+    border: 2px solid rgb(116, 116, 116);
+    border-radius: 5px;
+    background-color: rgb(167, 242, 242);
+    width: 30%;
+    float: left;
+    padding: 19px 26px;
+    position: relative;
+}
+.child_third::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+.child_third:hover::after{
+    background-color: black;
+    width: 100%;
+    height:100%;
+    opacity: .4;
+}
+.child_third2{
+    margin: 0px 5%;
+}
+.child_third h2{
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    display: inline;            
+}
+.child_third i{
+    color: rgb(0, 0, 0);
+   font-size: 30px;
+   margin-right: 18px;
+}
+.child_third p{
+    color: rgb(40, 40, 40);
+   padding: 30px 23px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    line-height: 20px;
+}
+.child_third a{
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+    z-index: 2;
+}
+/* /////////////////////////////////////// */
+.forth_page{
+   margin-top: 130px;
+   background-image: url(../pictures/health10.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 55vh;
+   position: relative;
+}
+.parent_forth{
+    overflow: auto;
+    width: 75%;
+    margin: auto ;
+    margin-top: 150px;
+}
+.child_forth{
+    text-align: center;
+   color: white;
+   font-size: 18px;
+   float: left;
+   width: 20%;
+   cursor: pointer;
+}
+.child_forth2 {
+   margin: 0px 5%;
+}
+.child_forth3{
+    margin-right: 5%;
+}
+.child_forth i{
+    color: rgb(0, 151, 238);
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+.child_forth p{
+    color: rgb(211, 211, 211);
+    font-size: 15px;
+    margin-top: 8px;
+}
+/* ////////////////////////////////////////////////////////// */
+.fifth_page{
+    margin-top: 120px;
+}
+.fifth_head{
+    margin: 0px 46%;
+}
+.parent1_fifth , .parent2_fifth{
+   overflow: auto;
+   margin: -15px 0px 90px 0px;
+}
+.par11 , .par12 , .par13 , .par21 , .par22 , .par23 {
+    float: left;
+    margin-left: 100px; 
+    width: 350px;
+    height: 350px;
+    position: relative; 
+}
+.img{
+    margin: 23px;
+}
+.overlay_fif{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0,0);
+    visibility: hidden;
+}
+.par1:hover .overlay_fif{
+    visibility: visible;
+    background-color: rgba(0, 0, 0,.7);
+    transition: .3s;
+}
+.par1:hover h3{
+    transition-delay: .3s;
+}
+.par1:hover p{
+    transition-delay: .4s;
+}
+.par1:hover i{
+    transition-delay: .5s;
+}
+.info_fif{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.info_fif h3{
+    color: rgb(61, 61, 231);
+    margin-top: -10px;
+}
+.info_fif p{
+    margin-top: 10px;
+    color: white;
+}
+.info_fif i{
+    margin-top: 5px;
+    background-color: rgb(34, 34, 153);
+    color: white;
+    line-height: 25px;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+/* //////////////////////////////////////////////////////////// */
+.offer{
+    margin-top: 120px;
+}
+.offer_head{
+    margin: 0px 46%;
+    font-size: 45px;
+}
+.parent_offer{
+    overflow: auto;
+    width: 80%;
+    margin: auto;
+}
+.child_offer{
+    text-align: center;
+    width: 30%;
+    border: 3px solid rgb(100, 99, 99);
+    border-radius: 12px;
+    float: left;
+    position: relative;
+}
+.middle{
+    margin: 0px 5%;
+}
+.h_offer{
+    margin-top: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.price {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   background-color: rgb(124, 189, 189);
+   margin:15px 36% 0px  36%;
+   position: relative;
+}
+.price p{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    margin: 29px 24px ;
+}
+.p_offer{
+    margin-top: 35px;
+    word-spacing: 2px;
+}
+.btn_offer{
+    border-radius: 10px;
+    width: 110px;
+    height: 35px;
+    margin: 30px 0px 30px 0px;
+    background-color: rgb(124, 189, 189);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.child_offer::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+.child_offer:hover::after{
+     background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%; 
+    cursor: pointer;
+}
+/* /////////////////////////////////////////////////////////////// */
+.Services{
+    margin-top: 120px;
+}
+.Services .head{
+    margin: 0px 45%;
+}
+.parent1_serv , .parent2_serv{
+    width: 90%;
+    margin: auto;
+    overflow: auto;
+    margin-bottom: 30px;
+}
+.par1_Serv , .par2_Serv{
+    position: relative;
+    width: 30%;
+    height: 200px;
+    border: 3px solid gray;
+    border-radius: 8px;
+    float: left;
+}
+.par12 , .par22{
+    margin: 0px 5%;
+}
+.par1_Serv h2{
+    display: inline;
+    color: rgb(49, 176, 176);
+}
+.par1_Serv i{
+    font-size: 25px;
+    padding: 25px 10px 30px 18px;
+    color: rgb(49, 176, 176);
+}
+.par1_Serv p{
+   text-align: center;
+   color: rgb(49, 176, 176);
+}
+.par2_Serv h2{
+    display: inline;
+    color: rgb(49, 176, 176);
+}
+.par2_Serv i{
+    font-size: 25px;
+    padding: 25px 10px 30px 18px;
+    color: rgb(49, 176, 176);
+}
+.par2_Serv p{
+   text-align: center;
+   color: rgb(49, 176, 176);
+}
+.par1_Serv::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: .5s;
+}
+.par1_Serv:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+.par2_Serv::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: .5s;
+}
+.par2_Serv:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+/* /////////////////////////////////////////////////////////////////////////////// */
+.half_pic_2{
+    margin-top: 130px;
+    background-image: url(../pictures/healthh.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 55vh;
+    position: relative;
+}
+.overlay_half_pic_2{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+}
+.parent_half2{
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    margin-top: 130px;
+    overflow: auto;
+}
+.circle_pic img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.circle_pic h2,.up_1{
+    position: absolute;
+    display: inline;
+    color: white;
+}
+.circle_pic .up_1{
+   margin: 50px 20px;
+   color: rgb(31, 31, 189);
+}
+.circle_pic h2{
+    margin: 25px 20px;
+}
+.circle_pic{
+    position: relative;
+    float: left;
+    width: 40%;
+}
+.right_pic{
+    margin-left: 20%;
+}
+.up_2{
+    color: rgb(185, 184, 184);
+    font-size: 14px;
+    margin-top: 8px;
+}
+/* /////////////////////////////////////////////////////////////////////////// */
+.team{
+    margin-top: 120px;
+}
+.head_team{
+    margin: 0px 42%;
+}
+.container_team{
+    width: 80%;
+    margin: auto;    
+}
+.parent_team{
+    overflow: auto;
+}
+.team_item{
+    padding-top: 15px;
+    width: 30%;
+    float: left;
+    text-align: center;
+    background-color: rgb(227, 227, 227);
+    position: relative;
+}
+.team_middle{
+    margin: 0px 5%;
+}
+.img_team{
+   position: relative;
+   width: 90%;
+   margin: auto;
+}
+.img_team img{
+    width: 100%;
+}
+.overlay_img_team{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+.overlay_img_team a{
+    display: block;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(47, 47, 192);
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    margin-left: auto;
+}
+.overlay_img_team a i{
+    line-height: 35px;
+}
+.info_team h2{
+   text-transform: uppercase;
+   font-size: 20px;
+   padding: 10px 0px;
+}
+.info_team p{
+    font-size: 15px;
+    padding-bottom: 5px;
+    color: rgb(100, 100, 100);
+}
+.team_item:hover .overlay_img_team{
+    visibility: visible;
+}
+.team_item::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+}
+.team_item:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: .4s;
+}
+/* ///////////////////////////////////////////////////////////////////////// */
+.final{
+    margin-top: 120px;
+}
+.head_final{
+    margin: 0px  37%;
+}
+.parent_final{
+   width: 80%;
+   margin: auto;
+   overflow: auto; 
+}
+.child_final{
+    float: left;
+    width: 30%;
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+    position: relative;
+}
+.child_final2{
+    margin: 0px 5%;
+}
+.img_final{
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
+}
+.img_final img{
+    width: 100%;
+}
+.info_final{
+    margin-top: 15px;
+}
+.info_final i{
+    margin-left: 35px;
+    color: rgb(7, 89, 203);
+    cursor: pointer;
+}
+.h_info_final{
+   margin: 20px 0px;
+}
+.p_final{
+    line-height: 28px;
+    word-spacing: 2px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+}
+.read_more{
+    display: block;
+    margin: 18px 0px;
+    color: rgb(7, 89, 203);
+    font-size: 17px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.child_final::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+.child_final:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: .5;
+}
+/* //////////////////////////////////////////////////////////////////// */
+.end{
+    margin-top: 80px;
+    width: 100%;
+    background-color: rgb(205, 205, 205);
+    height: 320px;
+    position: relative;
+    text-align: center;
+}
+.content_end{
+    width: 70%;  
+    margin: 45px 14%;
+    position: absolute;
+}
+.end_img img{
+    border-radius: 8px;
+}
+.icons_end{
+    display: inline;
+}
+.icons_end i{
+    font-size: 28px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    line-height: 45px;
+    background-color: rgb(43, 43, 255);
+    color: white;
+    margin: 20px 0px 0px 5px;
+}
+.i_end:hover {
+    background-color: rgb(26, 26, 144);
+    cursor: pointer;
+}
+.end_line{
+    color: rgb(95, 95, 95);
+    margin-top: 16px;
+}
